@@ -119,8 +119,8 @@ const OrderHistory = () => {
         }
         catch(error){
           console.log(error);
-          navigate('/')
-          dispatch(logoutUser())
+            alert('No Orders Found! Please Make the Order!')
+            navigate('/cust-dashboard')
       }
       }
 
