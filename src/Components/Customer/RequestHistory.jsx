@@ -31,11 +31,8 @@ const RequestHistory = () => {
         }
         catch(error){
           console.log(error);
-          dispatch(logoutUser())
-          if( error.response.status === 403) {
-            window.alert("Session expired. Login again to continue")
-            navigate('/')
-        }
+          alert('No Request Found!')
+            navigate('/cust-dashboard')
       }
       }
 
